@@ -1,0 +1,219 @@
+' Gambas class file
+
+Public operator As Integer
+Public vali As Float
+Public val As Float
+
+Public Sub Button_0_Click()
+
+  val = val * 10 + 0
+  ValueBox.Value = val
+
+End
+
+Public Sub Button_1_Click()
+
+  val = val * 10 + 1
+  ValueBox.Value = val
+
+End
+
+Public Sub Button_2_Click()
+
+  val = val * 10 + 2
+  ValueBox.Value = val
+
+End
+
+Public Sub Button_3_Click()
+
+  val = val * 10 + 3
+  ValueBox.Value = val
+
+End
+
+Public Sub Button_4_Click()
+
+  val = val * 10 + 4
+  ValueBox.Value = val
+
+End
+
+Public Sub Button_5_Click()
+
+  val = val * 10 + 5
+  ValueBox.Value = val
+
+End
+
+Public Sub Button_6_Click()
+
+  val = val * 10 + 6
+  ValueBox.Value = val
+
+End
+
+Public Sub Button_7_Click()
+
+  val = val * 10 + 7
+  ValueBox.Value = val
+
+End
+
+Public Sub Button_8_Click()
+
+  val = val * 10 + 8
+  ValueBox.Value = val
+
+End
+
+
+Public Sub Evaluate_Click()
+
+  Dim DegreeAngle, RadianAngle As Float
+  Select Case operator
+    Case 1
+      vali += val
+      ValueBox.Value = vali
+    Case 2
+      vali -= val
+      ValueBox.Value = vali
+    Case 3
+      vali *= val
+      ValueBox.Value = vali
+    Case 4
+      vali /= val
+      ValueBox.Value = vali
+    Case 5
+      DegreeAngle = val
+      RadianAngle = DegreeAngle * Pi / 180
+      vali = Cos(RadianAngle)
+      ValueBox.Value = vali
+      val = vali
+    Case 6
+      DegreeAngle = val
+      RadianAngle = DegreeAngle * Pi / 180
+      vali = Sin(RadianAngle)
+      ValueBox.Value = vali
+      val = vali
+    Case 7
+      DegreeAngle = val
+      RadianAngle = DegreeAngle * Pi / 180
+      vali = Tan(RadianAngle)
+      ValueBox.Value = vali
+      val = vali
+    Case 8
+      vali ^= val
+      ValueBox.Value = vali
+    Case 9
+      vali = Log(vali) / Log(val)
+      ValueBox.Value = vali
+    Case 10
+      vali = vali ^ (1 / val)
+      ValueBox.Value = vali
+  End Select
+
+End
+Public Sub Button_9_Click()
+
+  val = val * 10 + 9
+  ValueBox.Value = val
+
+End
+
+Public Sub Add_Click()
+
+  vali = val
+  val = 0
+  operator = 1
+  ValueBox.Value = 0
+
+End
+
+Public Sub Subtract_Click()
+
+  vali = val
+  val = 0
+  operator = 2
+  ValueBox.Value = 0
+
+End
+
+Public Sub Divide_Click()
+
+  vali = val
+  val = 0
+  operator = 4
+  ValueBox.Value = 0
+
+End
+
+Public Sub Multiply_Click()
+
+  vali = val
+  val = 0
+  operator = 3
+  ValueBox.Value = 0
+
+End
+
+
+Public Sub Sin_Click()
+
+  operator = 6
+
+End
+
+Public Sub Cos_Click()
+
+  operator = 5
+
+End
+
+
+Public Sub Clear_Click()
+
+  val = 0
+  vali = 0
+  ValueBox.Value = 0
+
+End
+Public Sub Tan_Click()
+
+  operator = 7
+
+End
+
+
+Public Sub Power_Click()
+
+  operator = 8
+  vali = val
+  val = 0
+  ValueBox.Value = 0
+
+End
+
+Public Sub Log_Click()
+
+  operator = 9
+  vali = val
+  val = 0
+  ValueBox.Value = 0
+
+End
+
+Public Sub Root_Click()
+
+  operator = 10
+  vali = val
+  val = 0
+  ValueBox.Value = 0
+
+End
+Public Sub Delete_Click()
+
+  val = Floor(val / 10)
+  ValueBox.Value = val
+
+End

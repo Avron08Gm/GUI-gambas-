@@ -1,0 +1,101 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { Root Button
+    MoveScaled(43,20,7,4)
+    Text = ("root")
+  }
+  { Log Button
+    MoveScaled(13,20,7,4)
+    Text = ("logn()")
+  }
+  { Power Button
+    MoveScaled(45,27,5,4)
+    Text = ("x^y")
+  }
+  { Delete Button
+    MoveScaled(45,40,5,4)
+    Text = ("<--")
+  }
+  { Clear Button
+    MoveScaled(45,34,5,4)
+    Text = ("C")
+  }
+  { Tan Button
+    MoveScaled(35,34,7,4)
+    Text = ("tan()")
+  }
+  { Cos Button
+    MoveScaled(35,40,7,4)
+    Text = ("cos()")
+  }
+  { Multiply Button
+    MoveScaled(36,27,5,4)
+    Text = ("x")
+  }
+  { Sin Button
+    MoveScaled(35,46,7,4)
+    Text = ("sin()")
+  }
+  { Divide Button
+    MoveScaled(28,27,5,4)
+    Text = ("/")
+  }
+  { Subtract Button
+    MoveScaled(20,27,5,4)
+    Text = ("-")
+  }
+  { Add Button
+    MoveScaled(13,27,5,4)
+    Text = ("+")
+  }
+  { Evaluate Button
+    MoveScaled(45,46,5,4)
+    Text = ("=")
+  }
+  { Button_9 Button
+    MoveScaled(28,46,5,4)
+    Text = ("9")
+  }
+  { Button_8 Button
+    MoveScaled(20,46,5,4)
+    Text = ("8")
+  }
+  { Button_7 Button
+    MoveScaled(-19,24,5,4)
+    Text = ("7")
+  }
+  { Button_6 Button
+    MoveScaled(28,40,5,4)
+    Text = ("6")
+  }
+  { Button_5 Button
+    MoveScaled(20,40,5,4)
+    Text = ("5")
+  }
+  { Button_4 Button
+    MoveScaled(13,40,5,4)
+    Text = ("4")
+  }
+  { Button_3 Button
+    MoveScaled(28,34,5,4)
+    Text = ("3")
+  }
+  { Button_2 Button
+    MoveScaled(20,34,5,4)
+    Text = ("2")
+  }
+  { Button_1 Button
+    MoveScaled(13,34,5,4)
+    Text = ("1")
+  }
+  { Button_0 Button
+    MoveScaled(20,51,5,4)
+    Text = ("0")
+  }
+  { ValueBox ValueBox
+    MoveScaled(8,10,49,4)
+    Alignment = Align.Right
+  }
+}
